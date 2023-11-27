@@ -24,20 +24,26 @@ async function getCurrentWeatherData(country) {
 }
 
 async function getForecastWeatherData(country) {
-    const weatherResponse = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${country}&days=5&aqi=no&alerts=no`, {mode: 'cors'});
+    const weatherResponse = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${country}&days=3&aqi=no&alerts=no`, {mode: 'cors'});
     const weatherData = await weatherResponse.json();
     console.log(weatherData);
     const feelsLikeC = weatherData.current.feelslike_c;
     const feelsLikeF = weatherData.current.feelslike_f;
     const tempC = weatherData.current.temp_c;
     const tempF = weatherData.current.temp_f;
+
     const weatherTextInfo = weatherData.current.condition['text'];
     const weatherInfoIcon = weatherData.current.condition['icon'];
+
+    const percipitation = weatherData.current.percip_mm;
     const humidity = weatherData.current.humidity;
     const windSpeed = weatherData.current.wind_kph;
     const windDirection = weatherData.current.wind_dir;
+    const visibility = weatherData.current.vis_km;
     const uv = weatherData.current.uv;
+
     const localTime = weatherData.location.localtime;
+    const location = weatherData.location.country;
 
     console.log(tempC);
     weatherInfoHTML.innerText += weatherData.location['country'];

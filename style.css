@@ -9,7 +9,7 @@ body {
     align-items: center;
     padding: 15px;
     gap: 15px;
-    background-color: grey;
+    background-color: #54494B;
     flex: 1 1 0;
     flex-wrap: wrap;
 }
@@ -51,3 +51,47 @@ body {
     background-color: skyblue;
 }
 
+#infoContainer {
+    display: flex;
+    justify-content: space-around;
+    background-color: lavender;
+}
+
+#currentWeather {
+    background-color: #D4E09B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#forecastInfo {
+    background-color: #9CB380;
+    padding: 30px;
+}
+
+#weatherTextData {
+    background-color: #94A89A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#extraWeatherInfo {
+    background-color: #54494B;
+}
+
+.extraInfoRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #7E8287;
+}
+
+.extraInfoBox {
+    color: white;
+    margin: 0px 50px;
+}
