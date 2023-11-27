@@ -44,3 +44,10 @@ body {
     margin-right: 30px;
     border-radius: 7px;
 }
+
+#weatherInfo {
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue;
+}
+
