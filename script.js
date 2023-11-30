@@ -4,6 +4,18 @@ const searchForm = document.getElementById('searchForm');
 const searchInput = document.getElementById('searchInput');
 const weatherInfoHTML = document.getElementById('weatherInfo');
 
+const locationHTML = document.querySelector('.location');
+const dateAndTime = document.querySelector('.dateAndTime');
+const weatherLogo = document.querySelector('.weatherLogo');
+const weatherDescription = document.querySelector('.weatherDescription');
+const temperatureActual = document.querySelector('.temperatureActual');
+const temperatureFeelsLike = document.querySelector('.temperatureFeelsLike');
+
+
+
+
+
+
 searchForm.addEventListener('submit', async function(event) {
     event.preventDefault();
 
@@ -46,7 +58,16 @@ async function getForecastWeatherData(country) {
     const location = weatherData.location.country;
 
     console.log(tempC);
-    weatherInfoHTML.innerText += weatherData.location['country'];
+    //weatherInfoHTML.innerText += weatherData.location['country'];
+
+    locationHTML.innerText = location;
+    dateAndTime.innerText = localTime;
+    weatherLogo.src = weatherInfoIcon;
+    weatherDescription.innerText = weatherTextInfo;
+    temperatureActual = tempC;
+    temperatureFeelsLike = feelsLikeC;
+
+
 }
 
 //getForecastWeatherData(country);

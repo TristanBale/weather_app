@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 15px;
+    padding: 20px 15px 20px 15px;
     gap: 15px;
     background-color: #54494B;
     flex: 1 1 0;
@@ -16,33 +16,65 @@ body {
 
 #searchForm{
     display: flex;
-    gap: 5px;
+    gap: 0px;
     margin-left: 20px;
+    align-self: center;
 }
 
 #searchInput {
-    min-width: 250px;
+    min-width: 40vw;
     border: 0px solid black;
+    padding: 5px 0px 5px 16px;
+    font-family: 'Hero New', sans-serif;
+    font-size: calc(2px + 1vw);  
+    color: black;
+    line-height: 1.2;
+    border-radius: 12px 0 0 12px;
+}
+
+#searchInput:focus-visible {
+    outline: 2px solid rgb(137, 207, 235, 0.5);
+    z-index: 1; /* this is so the outline takes priority and is not under adjacent elements*/
 }
 
 #searchBtn {
-    align-self: flex-end;
-    font-size: calc(9px + 1vw);
     background-color: #DD6E42;
-    color: white;
-    margin-left: -5px;
+    margin-left: auto;
     border: 0px solid black;
+    border-radius: 0 12px 12px 0;
+    padding: 5px 10px 5px 7px;
     box-sizing: border-box;
+    font-family: 'Hero New', sans-serif;
+    font-size: calc(10px + 1vw); 
+    font-weight: 500; 
+    color: white; 
+    line-height: 1.2;
 }
 
 #searchBtn:hover {
     background-color: darkorange;
+    z-index: 1;
+}
+
+#searchBtn:focus-visible {
+    outline: 2px solid rgb(137, 207, 235, 0.5);
 }
 
 .temperatureToggle {
     margin-left: auto;
     margin-right: 30px;
-    border-radius: 7px;
+    border-radius: 10px;
+    font-family: 'Hero New', sans-serif;
+    font-size: calc(10px + 1vh); 
+    font-weight: 300; 
+    color: black; 
+    padding: 5px 7px 5px 5px;
+    line-height: 1.2;
+    align-self: center;
+}
+
+.temperatureToggle:focus-visible {
+    outline: 2px solid rgb(137, 207, 235, 0.5);
 }
 
 #weatherInfo {
@@ -53,22 +85,51 @@ body {
 
 #infoContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: lavender;
+    padding: 20px;
 }
 
 #currentWeather {
-    background-color: #D4E09B;
+    background-color: #FFD9DA;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px;
+    margin-right: 50px;
+    font-family: 'Hero New', sans-serif;
+    font-size: calc(12px + 1vh); 
+    font-weight: 400; 
+    color: black; 
+    line-height: 1.5;
+    border-radius: 15px;
 }
 
 #forecastInfo {
-    background-color: #9CB380;
+    background-color: #F3E1DD;
     padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Hero New', sans-serif;
+    font-size: calc(12px + 1vh); 
+    font-weight: 400; 
+    color: black; 
+    line-height: 1.5;
+    border-radius: 15px;
+}
+
+.location {
+    margin-bottom: 30px;
+    font-weight: bolder;
+    font-size: calc(24px + 1vh);
+}
+
+.temperatureActual {
+    font-size: calc(40px + 1vh);
+    margin-left: 17px;
 }
 
 #weatherTextData {
@@ -77,6 +138,11 @@ body {
     justify-content: center;
     align-items: center;
     padding: 50px;
+    font-family: 'Hero New', sans-serif;
+    font-size: calc(16px + 1vh); 
+    font-weight: 500; 
+    color: #F9FAF8; 
+    line-height: 1.2;
 }
 
 #extraWeatherInfo {
@@ -89,9 +155,14 @@ body {
     align-items: center;
     padding: 20px;
     border: 1px solid #7E8287;
+    flex-wrap: wrap;
 }
 
 .extraInfoBox {
     color: white;
+    font-family: 'Hero New', sans-serif;
+    font-size: calc(16px + 1vh); 
+    font-weight: 500; 
+    line-height: 1.2;
     margin: 0px 50px;
 }

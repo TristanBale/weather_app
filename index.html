@@ -6,11 +6,14 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/hero-new');
+    </style>
 </head>
 <body>
     <div class="navBar">
         <img src="./logo.jpg" alt="tbc">
-        <h1>MyWeather</h1>
+        <h1 style="font-family: 'Hero New', sans-serif; font-size: calc(24px + 1vh); font-weight: bolder; color: #F9FAF8; line-height: 1.2;">MyWeather</h1>
 
         <form id="searchForm">
             <label for="searchInput"></label>
@@ -28,18 +31,20 @@
     <div id="weatherInfo">
         <div id="infoContainer">
             <div id="currentWeather">
-                <div class="country">Singapore</div>
+                <div class="location">Singapore</div>
                 <div class="dateAndTime">28 Nov'23 | 06:02</div>
-                <img src="" alt="weather logo">
+                <img class="weatherLogo" src="" height="auto" width="100" alt="weather logo">
                 <div class="weatherDescription">Clouds</div>
                 <div class="temperatureActual">28°</div>
-                <div class="temperatureFeelsLike">27°</div>
-                <div class="highLow">H:32° L:26°</div>
+                <div class="temperatureFeelsLike">Feels like: 27°</div>
             </div>
 
             
             <div id="forecastInfo">
-                forecast weather data
+                <div class="forcastBox">Now</div>
+                <div class="forcastBox">2</div>
+                <div class="forcastBox">3</div>
+                <div class="forcastBox">4</div>
             </div>
         </div>
         <div id="weatherTextData">Today: eg. light showers. High of 32°. Low of 26°</div>
