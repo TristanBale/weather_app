@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="navBar">
-        <img src="./logo.jpg" alt="tbc">
+        <img src="./weatherLogo.png" alt="weather logo" width="60" height="auto">
         <h1 style="font-family: 'Hero New', sans-serif; font-size: calc(24px + 1vh); font-weight: bolder; color: #F9FAF8; line-height: 1.2;">MyWeather</h1>
 
         <form id="searchForm">
@@ -68,15 +68,17 @@
     </div>
 
     <div id="extraWeatherInfo">
-        <div class="extraInfoRow">
-            <div class="extraInfoBox" name="extraInfo1">1</div>
-            <div class="extraInfoBox" name="extraInfo2">2</div>
-            <div class="extraInfoBox" name="extraInfo3">3</div>
+        <div class="extraInfoContainer">
+            <div class="extraInfoBox" id="extraInfo1">1</div>
+            <div class="extraInfoBox" id="extraInfo2">2</div>
         </div>
-        <div class="extraInfoRow">
-            <div class="extraInfoBox" name="extraInfo4">4</div>
-            <div class="extraInfoBox" name="extraInfo5">5</div>
-            <div class="extraInfoBox" name="extraInfo6">6</div>
+        <div class="extraInfoContainer">
+            <div class="extraInfoBox" id="extraInfo4">4</div>
+            <div class="extraInfoBox" id="extraInfo3">3</div>
+        </div>    
+        <div class="extraInfoContainer"> 
+            <div class="extraInfoBox" id="extraInfo5">5</div>
+            <div class="extraInfoBox" id="extraInfo6">6</div>
         </div>
     </div>
 </body>

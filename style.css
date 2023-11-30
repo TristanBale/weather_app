@@ -129,7 +129,8 @@ body {
 
 .weatherDescription {
     font-size: calc(10px + 1vh);
-    font-weight: 300; 
+    font-weight: 300;
+    text-align: center; 
 }   
 
 .temperatureActual {
@@ -138,7 +139,7 @@ body {
 }
 
 #weatherTextData {
-    background-color: #94A89A;
+    background-color: #89023E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,10 +150,6 @@ body {
     text-align: center;
     color: #F9FAF8; 
     line-height: 1.2;
-}
-
-#extraWeatherInfo {
-    background-color: #54494B;
 }
 
 .forecastBox {
@@ -174,21 +171,35 @@ body {
     font-size: calc(18px + 1vh);
 }
 
+.chanceOfRain0,.chanceOfRain1,.chanceOfRain2 {
+    font-size: calc(8px + 1vh);
+    text-align: center;
+}
 
-.extraInfoRow {
+#extraWeatherInfo {
+    background-color: #54494B;
     display: flex;
+    justify-content: center;
+}
+
+.extraInfoContainer {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    border: 1px solid #7E8287;
+    border: 0px solid #7E8287;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .extraInfoBox {
     color: white;
     font-family: 'Hero New', sans-serif;
-    font-size: calc(16px + 1vh); 
-    font-weight: 500; 
+    font-size: calc(10px + 1vh); 
+    font-weight: 400; 
     line-height: 1.2;
     margin: 0px 50px;
+    text-align: center;
+    text-wrap: wrap;
 }
