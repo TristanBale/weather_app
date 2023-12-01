@@ -158,9 +158,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #CC7178;
+    border: 3px solid #CC7178;
     padding: 10px;
     border-radius: 7px;
+    box-shadow: 2px 2px 3px #89023E;
 }
 
 .dateAndTime0 {
