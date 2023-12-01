@@ -3,6 +3,13 @@ body {
     line-height: calc(1.1em + 0.5vw);
   }
 
+.window {
+    display: flex;
+    flex-direction: column;
+    height: 97vh;
+    box-sizing: border-box;
+}
+
 .navBar {
     display: flex;
     justify-content: flex-start;
@@ -10,7 +17,6 @@ body {
     padding: 20px 15px 20px 15px;
     gap: 15px;
     background-color: #54494B;
-    flex: 1 1 0;
     flex-wrap: wrap;
 }
 
@@ -87,7 +93,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: lavender;
-    padding: 20px;
+    padding: 30px;
 }
 
 #currentWeather {
@@ -181,6 +187,7 @@ body {
 #extraWeatherInfo {
     background-color: #54494B;
     display: flex;
+    flex: 1 1 0;
     justify-content: center;
 }
 

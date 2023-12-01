@@ -11,74 +11,76 @@
     </style>
 </head>
 <body>
-    <div class="navBar">
-        <img src="./weatherLogo.png" alt="weather logo" width="60" height="auto">
-        <h1 style="font-family: 'Hero New', sans-serif; font-size: calc(24px + 1vh); font-weight: bolder; color: #F9FAF8; line-height: 1.2;">MyWeather</h1>
+    <div class="window">
+        <div class="navBar">
+            <img src="./weatherLogo.png" alt="weather logo" width="60" height="auto">
+            <h1 style="font-family: 'Hero New', sans-serif; font-size: calc(24px + 1vh); font-weight: bolder; color: #F9FAF8; line-height: 1.2;">MyWeather</h1>
 
-        <form id="searchForm">
-            <label for="searchInput"></label>
-            <input type="text" id="searchInput" name="searchInput" placeholder="Enter a city">
-            <button id="searchBtn" type="submit">Search</button>
-        </form>
+            <form id="searchForm">
+                <label for="searchInput"></label>
+                <input type="text" id="searchInput" name="searchInput" placeholder="Enter a city">
+                <button id="searchBtn" type="submit">Search</button>
+            </form>
 
-        <button type="button" class="temperatureToggle">
-            <span><b>°C</b></span>
-            <span>/</span>
-            <span>°F</span>
-        </button>
-    </div>
-    
-    <div id="weatherInfo">
-        <div id="infoContainer">
-            <div id="currentWeather">
-                <div class="location">Singapore</div>
-                <div class="dateAndTime">28 Nov'23 | 06:02</div>
-                <img class="weatherLogo" src="" height="auto" width="100" alt="weather logo">
-                <div class="weatherDescription">Clouds</div>
-                <div class="temperatureActual">28°</div>
-        <!--    <div class="temperatureFeelsLike">Feels like: 27°</div>
-                <div class="highLow">High: x Low: y</div>   -->
-            </div>
-
-
-            
-            <div id="forecastInfo">
-                <div style="font-family: 'Hero New', sans-serif;">Forecast:</div>
-                <div class="forecastBox">
-                    <div class="dateAndTime0">28 Nov'23 | 06:02</div>
-                    <div class="chanceOfRain0">x%</div>
-                    <img class="weatherLogo0" src="" height="auto" width="55" alt="weather logo">
-                    <div class="avgTemp0">High: x Low: y</div>
-                </div>
-                <div class="forecastBox">
-                    <div class="dateAndTime1"></div>
-                    <div class="chanceOfRain1"></div>
-                    <img class="weatherLogo1" src="" height="auto" width="55" alt="weather logo">
-                    <div class="avgTemp1"></div>
-                </div>
-                <div class="forecastBox">
-                    <div class="dateAndTime2"></div>
-                    <div class="chanceOfRain2"></div>
-                    <img class="weatherLogo2" src="" height="auto" width="55" alt="weather logo">
-                    <div class="avgTemp2"></div>
-                </div>
-            </div>
+            <button type="button" class="temperatureToggle">
+                <span><b>°C</b></span>
+                <span>/</span>
+                <span>°F</span>
+            </button>
         </div>
-        <div id="weatherTextData">Today: eg. light showers. High of 32°. Low of 26°</div>
-    </div>
+        
+        <div id="weatherInfo">
+            <div id="infoContainer">
+                <div id="currentWeather">
+                    <div class="location">Singapore</div>
+                    <div class="dateAndTime">28 Nov'23 | 06:02</div>
+                    <img class="weatherLogo" src="" height="auto" width="100" alt="weather logo">
+                    <div class="weatherDescription">Clouds</div>
+                    <div class="temperatureActual">28°</div>
+            <!--    <div class="temperatureFeelsLike">Feels like: 27°</div>
+                    <div class="highLow">High: x Low: y</div>   -->
+                </div>
 
-    <div id="extraWeatherInfo">
-        <div class="extraInfoContainer">
-            <div class="extraInfoBox" id="extraInfo1">1</div>
-            <div class="extraInfoBox" id="extraInfo2">2</div>
+
+                
+                <div id="forecastInfo">
+                    <div style="font-family: 'Hero New', sans-serif;">Forecast:</div>
+                    <div class="forecastBox">
+                        <div class="dateAndTime0">28 Nov'23 | 06:02</div>
+                        <div class="chanceOfRain0">x%</div>
+                        <img class="weatherLogo0" src="" height="auto" width="55" alt="weather logo">
+                        <div class="avgTemp0">High: x Low: y</div>
+                    </div>
+                    <div class="forecastBox">
+                        <div class="dateAndTime1"></div>
+                        <div class="chanceOfRain1"></div>
+                        <img class="weatherLogo1" src="" height="auto" width="55" alt="weather logo">
+                        <div class="avgTemp1"></div>
+                    </div>
+                    <div class="forecastBox">
+                        <div class="dateAndTime2"></div>
+                        <div class="chanceOfRain2"></div>
+                        <img class="weatherLogo2" src="" height="auto" width="55" alt="weather logo">
+                        <div class="avgTemp2"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="weatherTextData">Today: eg. light showers. High of 32°. Low of 26°</div>
         </div>
-        <div class="extraInfoContainer">
-            <div class="extraInfoBox" id="extraInfo4">4</div>
-            <div class="extraInfoBox" id="extraInfo3">3</div>
-        </div>    
-        <div class="extraInfoContainer"> 
-            <div class="extraInfoBox" id="extraInfo5">5</div>
-            <div class="extraInfoBox" id="extraInfo6">6</div>
+
+        <div id="extraWeatherInfo">
+            <div class="extraInfoContainer">
+                <div class="extraInfoBox" id="extraInfo1">1</div>
+                <div class="extraInfoBox" id="extraInfo2">2</div>
+            </div>
+            <div class="extraInfoContainer">
+                <div class="extraInfoBox" id="extraInfo4">4</div>
+                <div class="extraInfoBox" id="extraInfo3">3</div>
+            </div>    
+            <div class="extraInfoContainer"> 
+                <div class="extraInfoBox" id="extraInfo5">5</div>
+                <div class="extraInfoBox" id="extraInfo6">6</div>
+            </div>
         </div>
     </div>
 </body>
