@@ -125,6 +125,7 @@ body {
     margin-bottom: 20px;
     font-weight: bolder;
     font-size: calc(24px + 1vh);
+    text-align: center;
 }
 
 .weatherDescription {
