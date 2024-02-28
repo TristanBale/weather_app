@@ -147,4 +147,4 @@ function getDaysDigitFromDate(date) {
     return result;
 }
 
-getForecastWeatherData('singapore');
+getForecastWeatherData('Singapore');
